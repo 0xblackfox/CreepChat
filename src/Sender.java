@@ -44,18 +44,6 @@ public class Sender extends Thread {
 				e.printStackTrace();
 			}
 			
-			/*
-			 * if (input.equalsIgnoreCase("file")) { //chat.end_conn(); //return;
-			 * FileInputStream fr; try { System.out.println("Enter File Name:"); Scanner in
-			 * = new Scanner(System.in); String s = in.nextLine(); fr = new
-			 * FileInputStream(s); byte[] b = new byte[20002]; fr.read(b, 0, b.length);
-			 * 
-			 * OutputStream os = chat.socket.getOutputStream(); String packet = os.write(b,
-			 * 0, b.length; chat.send(packet); } catch (Exception e) { // TODO
-			 * Auto-generated catch block e.printStackTrace(); }
-			 * 
-			 * }
-			 */
 
 			if (input.equalsIgnoreCase("over")) {
 				chat.end_conn();
